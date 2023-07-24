@@ -29,7 +29,7 @@ window.onload = function() {
       document.getElementById('result').textContent = '正解！';
       correct++;
     } else {
-      document.getElementById('result').textContent = '不正解。動詞 "' + currentVerb + '" は一般動詞です。';
+      document.getElementById('result').textContent = '不正解。 動詞 "' + currentVerb + '" は一般動詞です。';
       incorrect++;
     }
     newVerb();
