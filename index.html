@@ -2,22 +2,23 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>動詞判別ゲーム</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <script src="script.js"></script>
 </head>
 
-<body>
-  Hello world
-  <script src="script.js"></script>
-
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+  <h1 class="mb-4 text-3xl font-bold text-blue-700">動詞判別ゲーム</h1>
+  <p class="mb-4 text-blue-500">与えられた動詞が一般動詞かBE動詞かを判別します。</p>
+  <div class="p-6 mb-4 text-2xl font-semibold bg-white rounded shadow" id="verb-container"></div>
+  <div class="space-x-4">
+    <button class="px-4 py-2 text-white bg-blue-500 rounded shadow" id="be-verb-button">BE動詞</button>
+    <button class="px-4 py-2 text-white bg-blue-500 rounded shadow" id="general-verb-button">一般動詞</button>
+  </div>
+  <p class="mt-4" id="result"></p>
+  <p class="mt-2" id="correct">正解数: 0</p>
+  <p class="mt-2" id="incorrect">不正解数: 0</p>
+  <p class="mt-2" id="accuracy">正解率: 0%</p>
 </body>
 
 </html>
