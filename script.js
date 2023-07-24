@@ -26,7 +26,7 @@ window.onload = function() {
 
   document.getElementById('be-verb-button').onclick = function() {
     if (beVerbs.includes(currentVerb)) {
-      document.getElementById('result').textContent = '正解！';
+      document.getElementById('result').textContent = '正解 ！';
       correct++;
     } else {
       document.getElementById('result').textContent = '不正解。 動詞 "' + currentVerb + '" は一般動詞です。';
