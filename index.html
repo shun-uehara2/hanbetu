@@ -7,20 +7,18 @@
   <script src="script.js"></script>
 </head>
 
-<body class="flex flex-col items-center justify-center min-h-full bg-gray-100">
-  <div class="w-full px-4">
-    <h1 class="mb-4 text-3xl font-bold text-center text-blue-700">動詞判別ゲーム</h1>
-    <p class="mb-4 text-center text-blue-500">与えられた動詞が一般動詞かBE動詞かを判別します。</p>
-    <div class="p-6 mb-4 text-2xl font-semibold text-center bg-white rounded shadow" id="verb-container"></div>
-    <div class="flex justify-center space-x-4">
-      <button class="px-4 py-2 text-white bg-blue-500 rounded shadow" id="be-verb-button">BE動詞</button>
-      <button class="px-4 py-2 text-white bg-blue-500 rounded shadow" id="general-verb-button">一般動詞</button>
-    </div>
-    <p class="mt-4 text-center" id="result"></p>
-    <p class="mt-2 text-center" id="correct">正解数: 0</p>
-    <p class="mt-2 text-center" id="incorrect">不正解数: 0</p>
-    <p class="mt-2 mb-8 text-center" id="accuracy">正解率: 0%</p>
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+  <h1 class="mb-4 text-3xl font-bold text-blue-700">動詞判別ゲーム</h1>
+  <p class="mb-4 text-blue-500">与えられた動詞が一般動詞かBE動詞かを判別します。</p>
+  <div class="p-6 mb-4 text-2xl font-semibold bg-white rounded shadow" id="verb-container"></div>
+  <div class="space-x-4">
+    <button class="px-4 py-2 text-white bg-blue-500 rounded shadow" id="be-verb-button">BE動詞</button>
+    <button class="px-4 py-2 text-white bg-blue-500 rounded shadow" id="general-verb-button">一般動詞</button>
   </div>
+  <p class="mt-4" id="result"></p>
+  <p class="mt-2" id="correct">正解数: 0</p>
+  <p class="mt-2" id="incorrect">不正解数: 0</p>
+  <p class="mt-2" id="accuracy">正解率: 0%</p>
 </body>
 
 </html>
